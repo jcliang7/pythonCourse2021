@@ -1,13 +1,13 @@
-text = input('N? ')
-number = int(text)
-print(number + 1)
+import math as math
+class Circle:
+    def __init__(self, r):
+        self.r = r
+    def area(self):
+        return math.pi * self.r * self.r
+    def circumference(self):
+        return 2 * math.pi * self.r
 
-###input
-##name = input('What is your name? ')
-##city = input('Where do you live? ')
-##
-###processing
-##result = "My name is " + name + " and I live in " + city + "."
-##
-###output
-##print(result)
+
+newCircle = Circle(8)
+print(newCircle.area())
+print(newCircle.circumference())
